@@ -1,0 +1,26 @@
+{
+  "name": "meesho-mern-app",
+  "version": "1.0.0",
+  "description": "MERN stack web app for Meesho product search",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "node start-app.js",
+    "dev:old": "node start-servers.js",
+    "dev:concurrent": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "seed": "cd backend && npm run data:import",
+    "kill-ports": "node kill-ports.js"
+  },
+  "keywords": ["mern", "react", "node", "express", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

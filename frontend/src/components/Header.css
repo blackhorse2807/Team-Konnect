@@ -1,0 +1,74 @@
+/* Enhanced Header Styles */
+.header-gradient {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+}
+
+.search-glow:focus-within {
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.cart-bounce {
+  animation: bounceIn 0.3s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.profile-avatar {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
+}
+
+.search-suggestions {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.mobile-menu-slide {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
