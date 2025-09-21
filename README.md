@@ -1,36 +1,34 @@
 # Meesho MERN Stack Application
 
-A basic MERN stack web application for searching and displaying product feeds based on user queries.
+A comprehensive MERN stack web application designed for searching and displaying product feeds based on user queries.
 
 ## Features
 
-- React frontend with Tailwind CSS for styling
-- Express backend with a search API endpoint
-- Mock product data (with MongoDB schema ready for future integration)
-- Responsive product card grid layout
-- Search functionality with loading states
+- **Frontend**: Built with React and styled using Tailwind CSS for a modern and responsive UI.
+- **Backend**: Powered by Express, featuring a robust search API endpoint.
+- **Data**: Utilizes mock product data with MongoDB schema ready for future integration.
+- **UI Components**: Includes a responsive product card grid layout and search functionality with loading states.
 
 ## Project Structure
 
 ```
 project/
 ├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
 │   ├── models/
-│   │   └── Product.js
 │   ├── routes/
-│   │   └── searchRoutes.js
+│   ├── utils/
 │   ├── package.json
 │   └── server.js
 ├── frontend/
 │   ├── public/
 │   ├── src/
+│   │   ├── api/
 │   │   ├── components/
-│   │   │   ├── Header.js
-│   │   │   ├── ProductCard.js
-│   │   │   ├── ProductGrid.js
-│   │   │   └── SearchBar.js
+│   │   ├── context/
 │   │   ├── pages/
-│   │   │   └── HomePage.js
 │   │   ├── App.js
 │   │   ├── index.css
 │   │   └── index.js
@@ -43,53 +41,50 @@ project/
 
 ## Prerequisites
 
-- Node.js (v14+ recommended)
-- npm or yarn
-- MongoDB (for future integration)
+- **Node.js**: Version 14 or higher is recommended.
+- **Package Manager**: npm or yarn.
+- **MongoDB**: Required for future data integration.
 
 ## Installation
 
-1. Clone the repository:
-   ```
+1. **Clone the repository**:
+   ```bash
    git clone <repository-url>
-   cd meesho-mern-app
+   cd Meesho
    ```
 
-2. Install dependencies for the root project, backend, and frontend:
-   ```
-   npm run install-all
-   ```
-   
-   Alternatively, you can install dependencies separately:
-   ```
-   npm install
-   cd backend && npm install
-   cd ../frontend && npm install
-   ```
+2. **Install dependencies**:
+   - For the entire project:
+     ```bash
+     npm run install-all
+     ```
+   - Alternatively, install dependencies separately:
+     ```bash
+     npm install
+     cd backend && npm install
+     cd ../frontend && npm install
+     ```
 
 ## Running the Application
 
 To run both the frontend and backend concurrently:
-
-```
+```bash
 npm run dev
 ```
-
-This will start:
-- Backend server on http://localhost:5000
-- Frontend development server on http://localhost:3000
+- **Backend**: http://localhost:5000
+- **Frontend**: http://localhost:3000
 
 ### Running Separately
 
-To run the backend only:
-```
-npm run server
-```
+- **Backend only**:
+  ```bash
+  npm run server
+  ```
 
-To run the frontend only:
-```
-npm run client
-```
+- **Frontend only**:
+  ```bash
+  npm run client
+  ```
 
 ## API Endpoints
 
@@ -122,9 +117,9 @@ npm run client
 
 ## Future Enhancements
 
-- Connect to MongoDB for real product data
-- Add user authentication
-- Implement advanced search filters
-- Add product detail pages
-- Implement cart functionality
+- Integrate MongoDB for real product data.
+- Implement user authentication.
+- Add advanced search filters.
+- Develop product detail pages.
+- Implement cart functionality.
 
